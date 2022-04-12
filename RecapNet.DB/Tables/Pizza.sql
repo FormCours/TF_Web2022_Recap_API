@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Pizza]
+(
+	[Id] INT NOT NULL IDENTITY,
+	[Name] NVARCHAR(50) NOT NULL,
+	[Price] DECIMAL(5,2) NOT NULL,
+	[filename] VARCHAR(50) NULL, 
+    CONSTRAINT PK_Pizza PRIMARY KEY([Id]),
+	CONSTRAINT UK_Pizza_Name UNIQUE([Name])
+)
